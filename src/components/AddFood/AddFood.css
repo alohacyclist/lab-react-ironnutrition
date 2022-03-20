@@ -1,0 +1,8 @@
+.addFood_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 350px;
+    padding: 1.5rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

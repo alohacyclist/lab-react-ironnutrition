@@ -12,9 +12,19 @@ function App() {
 
   return (
     <div className="App">
-      <FoodSearch />
-      <AddFood setFoods={setFoods} />
-      { foods.map(food => { return <FoodBox food={food} setFoods={setFoods}/> }) }
+      
+      <div>
+        <FoodSearch />
+      </div>
+      
+      <div>
+        <AddFood setFoods={setFoods} />
+      </div>
+
+      <div className="food_list">
+        { foods.map(food => { return <FoodBox food={food} setFoods={setFoods}/> }) }
+      </div>
+      
     </div>
   );
 }

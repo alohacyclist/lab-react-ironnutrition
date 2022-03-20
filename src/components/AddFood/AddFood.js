@@ -17,8 +17,8 @@ export function AddFood({ setFoods }) {
     }
 
     return (
-        <div className="addFood_form">
-            <form onSubmit={handleSubmit}>
+        <div >
+            <form className="addFood_form" onSubmit={handleSubmit}>
                 <input name={'food_name'} value={foodNameInput} type="text" onChange={(e) => setFoodNameInput(e.target.value) } placeholder='Add name of food' />
                 <input name={'food_img'} value={foodImgInput} type="text" onChange={(e) => setFoodImgInput(e.target.value) } placeholder='Add a picture URL' />
                 <input name={'food_kcal'} value={foodCalInput} type="text" onChange={(e) => setFoodCalInput(e.target.value) } placeholder='Add calories' />
