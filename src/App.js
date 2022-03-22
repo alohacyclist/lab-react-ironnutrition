@@ -1,20 +1,23 @@
 import './App.css';
 import foods_db from "./db/foods.json";
-import { FoodBox } from './components'
-import { AddFood } from './components'
-import { FoodSearch } from './components'
-import { useState, useEffect } from 'react'
+import { FoodBox, AddFood, FoodSearch } from './components'
+import { useState } from 'react'
 
 
 function App() {
 
   const [foods, setFoods] = useState(foods_db)
 
+  const search = (searchTerm) => {
+    let foodSearch = foods.filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    setFoods(foodSearch)
+  }
+
   return (
     <div className="App">
       
       <div>
-        <FoodSearch />
+        <FoodSearch search={search}/>
       </div>
       
       <div>

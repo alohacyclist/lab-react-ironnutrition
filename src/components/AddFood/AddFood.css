@@ -5,4 +5,32 @@
     width: 350px;
     padding: 1.5rem;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: #e6e6ea;
+}
+
+.addFood_form > input {
+    font-size: 1rem;
+}
+
+.add {
+    width: 350px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.add:hover {
+    background-color: #2ab7ca ;
+}
+.add:active {
+    transform: translateY(4px);
+}
+
+.showHideBtn {
+    width: 350px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.showHideBtn:hover {
+    background-color: #fe4a49 ;
 }

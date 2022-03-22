@@ -1,8 +1,7 @@
 import './FoodBox.css';
 import React from 'react'
-import { v4 } from 'uuid';
 
-export function FoodBox({food, setFoods, id}) {
+export function FoodBox({food, setFoods}) {
 
     const handleDelete = () => {
         setFoods((prevFoods) => {
