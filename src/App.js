@@ -7,9 +7,10 @@ import { useState } from 'react'
 function App() {
 
   const [foods, setFoods] = useState(foods_db)
+  const [foodFilter, setFoodFilter] = useState(foods)
 
   const search = (searchTerm) => {
-    let foodSearch = foods.filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    let foodSearch = foodFilter.filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()))
     setFoods(foodSearch)
   }
 
